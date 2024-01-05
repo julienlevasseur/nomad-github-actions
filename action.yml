@@ -1,0 +1,6 @@
+name: 'Nomad'
+description: 'Provides a Nomad CLI in your GitHub Actions workflow.'
+author: 'Julien Levasseur'
+runs:
+  using: 'docker'
+  image: 'julienlevasseur/nomad'

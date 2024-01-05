@@ -1,0 +1,13 @@
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - docker build . -t julienlevasseur/nomad
+  push:
+    cmds:
+      - docker push julienlevasseur/nomad
+  buildAndPush:
+    - task: docker:build
+    - task: docker:push
+
